@@ -56,6 +56,7 @@ const Genres = ({
 style={{ margin: 2 }}
 label={genre.name}
 key={genre.id}
+className="genSelect"
 color="primary"
 clickable
 size="small"
@@ -69,7 +70,7 @@ onDelete={() => handleDelete(genre)}
   style={{ margin: 2 }}
   label={genre.name}
   key={genre.id}
-  
+  className="gen"
   clickable
   size="small"
   onClick={() => handleAdd(genre)}

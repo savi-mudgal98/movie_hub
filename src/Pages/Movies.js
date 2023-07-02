@@ -32,7 +32,7 @@ useEffect(() => {
 
   return (
   
-        <div>
+     <div>
           <span className="pageTitle">Discover Movies</span>
         
           <Genres
@@ -61,6 +61,8 @@ useEffect(() => {
           {numOfPages > 1 && (
             <CustomPagination setPage={setPage} numOfPages={numOfPages} page={page}/>
           )}
+
+
         </div>
       );
   

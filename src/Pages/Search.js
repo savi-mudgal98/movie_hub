@@ -73,15 +73,16 @@ const Search = () => {
           setPage(1);
         }}
       
-        textColor="secondary"
-        indicatorColor="secondary"
+        // textColor="secondary"
+        // indicatorColor="secondary"
         aria-label="secondary tabs example"
-       
+        className="tabs"
       >
-        <Tab value="one" style={{ width: "50%" }} label="Search Movies" />
-        <Tab value="two" style={{ width: "50%" }} label="Search TV-Series" />
+        <Tab value="one" style={{ width: "50%" , color: "blue" }} label="Search Movies" />
+        <Tab value="two" style={{ width: "50%" ,  color: "blue" }} label="Search TV-Series" />
        
       </Tabs>
+      <br/><br/><br/><br/>
     </Box>
 
     <div className="trending">

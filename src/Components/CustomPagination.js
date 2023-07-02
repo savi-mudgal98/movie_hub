@@ -20,13 +20,14 @@ import Pagination from '@mui/material/Pagination';
       justifyContent: "center",
       marginTop: "80px",
       marginBottom: "80px",
-    
+      
     }}
     >
 
 
       <Pagination count={numOfPages} 
       page={page} 
+      className="pagi"
       color="secondary"
       onChange={(e)=> handleChange(e.target.textContent)} />
 

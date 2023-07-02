@@ -10,25 +10,23 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 import { useNavigate } from "react-router-dom";
 import "../App.css"
 
-
-const useStyles = makeStyles({
-  root: {
-    width: "100%",
-    position: "fixed",
-    bottom: 0,
-
-    color: 'black',
-    zIndex: 10,
-
-  },
+const useStyles= makeStyles({
+  root:{
+   width: "100%",
+   position:"fixed",
+   bottom:0,
+   backgroundColor:"white",
+   zIndex:100,
+},
 });
 
 
 const MainNav = () => {
-  const classes = useStyles();
+  const classes= useStyles();
   const [value, setValue] = React.useState(0);
   const navigate = useNavigate();
 
+  
 
   useEffect(() => {
     if (value === 0) {
@@ -44,27 +42,27 @@ const MainNav = () => {
 
 
   return (
-       
-   <>    
+    <>
 
 <BottomNavigation 
   showLabels
-  className={classes.root}
- 
   value={value}
   onChange={(event, newValue) => {
     setValue(newValue);
   }}
-
+  
+  className={classes.root}
 
 >
-<BottomNavigationAction label="Trending"   style={{ color: "#600080" }} icon={<WhatshotIcon />} />
-  <BottomNavigationAction label="Movies"   style={{ color: "#600080" }} icon={<MovieCreationIcon/>}  />
-  <BottomNavigationAction label="Series"   style={{ color: "#600080" }} icon={<LiveTvIcon />} />
-  <BottomNavigationAction label="Search"   style={{ color: "#600080" }} icon={<SearchIcon />} />
+<BottomNavigationAction label="Trending"  style={{color:"#a64dff"}} icon={<WhatshotIcon />} />
+  <BottomNavigationAction label="Movies"  style={{color:"#a64dff"}} icon={<MovieCreationIcon/>}  />
+  <BottomNavigationAction label="Series"  style={{color:"#a64dff"}} icon={<LiveTvIcon />} />
+  <BottomNavigationAction label="Search" style={{color:"#a64dff"}} icon={<SearchIcon />} />
 
  
 </BottomNavigation>
+
+
 </>
 
 
