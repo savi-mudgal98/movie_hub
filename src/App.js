@@ -15,6 +15,7 @@ import Switch from '@mui/material/Switch';
 import Brightness5Icon from '@mui/icons-material/Brightness5';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 
+
 export const ThemeContext = createContext(null);
 
 
@@ -39,7 +40,8 @@ function App() {
 
   <div className="switch">
     <p class="lig">light</p>
-         <Brightness5Icon />
+         <Brightness5Icon style={{color:'pink'}}/>
+      
           <Switch
           color="secondary"
           onChange={toggleTheme} 
@@ -49,9 +51,9 @@ function App() {
           // {...theme === "light" ? "Light Mode" : "Dark Mode"}
           // label={"{theme}"}
            />
-           <NightlightIcon/>
+           <NightlightIcon style={{color:'pink'}}/>
            <p class="dar">dark</p>
-        </div>
+  </div>
   
         <Container>
        <Routes>

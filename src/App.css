@@ -11,6 +11,7 @@
  
   padding: 50px 20px ;
   background-color: white;
+  width: 100%;
  
 }
 
@@ -36,11 +37,9 @@
 
 .switch {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  width: 100vw;
-  height: 100px;
-  margin-left: 1100px;
- 
+  width:100%;
 }
 
 #light .pagi
@@ -175,7 +174,7 @@ header
      background: url("../public/images/moviebg1.jpg");
      background-attachment: fixed;
      box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .5);
-     font-size: 70px;
+     font-size: 4rem;
      color:white;
      text-align: center;
      padding-top: 50px;
@@ -185,12 +184,13 @@ header
 }
 
 
-@media (max-width: 1000px) {
+
+/* @media (max-width: 350px) {
   .header {
     padding-top: 15px;
-    font-size: 6.4vw;
+    font-size: 1.5rem;
   }
-}
+} */
 
 .media {
   display: flex;

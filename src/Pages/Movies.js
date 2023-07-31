@@ -6,6 +6,7 @@ import SingleContent from "../Components/SingleContent";
 import useGenre from "../useGenre";
 import CustomPagination from '../Components/CustomPagination';
 
+
 const Movies = () => {
 const [genres, setGenres] = useState([]);
 const [selectedGenres, setSelectedGenres] = useState([]);
@@ -58,6 +59,7 @@ useEffect(() => {
                 />
               ))}
           </div>
+          
           {numOfPages > 1 && (
             <CustomPagination setPage={setPage} numOfPages={numOfPages} page={page}/>
           )}
